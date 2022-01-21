@@ -6,3 +6,5 @@ The goal of this project is to use out-of-distribution (OOD) detection framework
 
 ## Files
 - BMI826_Final_Project.pdf: The final project report submitted. This report details the motivation, methodlogy, and results of this project.
+- HelperMethods.py: This module contains an collection of functions that load, train, and test deep learning models.
+- OutDetection.py; This model loads a model and a collection of images, then applies OOD detection algorithms to classify each image as either out- or in-distribution
