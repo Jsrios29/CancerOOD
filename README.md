@@ -12,6 +12,6 @@ The goal of this project is to use out-of-distribution (OOD) detection framework
 - Patch.Overlay.py: This module loads in an array of scores outputted by Patch.Predict.py for a series of patch images outputted by PatchExtract.py, along with a numpy array that holds the counts of how many times each pixel in an ROI appear in the patches.
 -  dpAnnotatedWSI.py: This module contains an algorithm for taking WSI images and converting them to JPEG image patches. These WSI images come with XML files which hold the coordinates for annotated regions. This scrip will run through each WSI and extract patches, and place them into the appropriate folder based on the region.
 -  dpBinaryWSI.py: This module contains an algorithm for taking WSI images and converting them to JPEG image patches. These WSI immages only have one binary label : 1, there is carcinoma present, 0, there is no carcinoma present.
-- dpMisc: This file contains multiple methods to process the various training data for images in various datasets. This file is simply a bag of scripts to process
+- dpMisc.py: This file contains multiple methods to process the various training data for images in various datasets. This file is simply a bag of scripts to process
 the diverse image data formatting in this project.  
 - main.py: This module handles the arguement parsin, and calls HelpErMethods.py to train and test a deep learning model. 
