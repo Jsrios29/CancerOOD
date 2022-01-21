@@ -7,5 +7,9 @@ The goal of this project is to use out-of-distribution (OOD) detection framework
 ## Files
 - BMI826_Final_Project.pdf: The final project report submitted. This report details the motivation, methodlogy, and results of this project.
 - HelperMethods.py: This module contains an collection of functions that load, train, and test deep learning models.
-- OutDetection.py: This model loads a model and a collection of images, then applies OOD detection algorithms to classify each image as either out- or in-distribution.
-- PatchExtract.py: This model loads a region of interest (ROI) from an .svs image. The ROI is of pre=-determined size, and the images collected are overlapping patches used as input for OOD detection
+- OutDetection.py: This module loads a model and a collection of images, then applies OOD detection algorithms to classify each image as either out- or in-distribution.
+- PatchExtract.py: This module loads a region of interest (ROI) from an .svs image. The ROI is of pre=-determined size, and the images collected are overlapping patches used as input for OOD detection.
+- Patch.Overlay.py: This module loads in an array of scores outputted by Patch.Predict.py for a series of patch images outputted by PatchExtract.py, along with a numpy array that holds the counts of how many times each pixel in an ROI appear in the patches.
+-  dpAnnotatedWSI.py: This module contains an algorithm for taking WSI images and converting them to JPEG image patches. These WSI images come with XML files which hold the coordinates for annotated regions. This scrip will run through each WSI and extract patches, and place them into the appropriate folder based on the region.
+-  dpBinaryWSI.py: This module contains an algorithm for taking WSI images and converting them to JPEG image patches. These WSI immages only have one binary label : 1, there is carcinoma present, 0, there is no carcinoma present.
+-  
